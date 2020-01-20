@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Course Editor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="editor.style.client.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark wbdv-editor-navbar sticky-top">
+		<button type="button" class="close" aria-label="Close">
+		   <label aria-hidden="true" class="wbdv-course-editor wbdv-close text-white-50">&times;</label>
+		</button>
+	    <a class="navbar-brand mx-lg-5">CS5610 - Webdev</a>
+	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+	    	<span class="navbar-toggler-icon"></span>
+	  	</button>
+		<div class="collapse navbar-collapse" id="navbarTogglerDemo02">  	
+		    <ul class="navbar-nav">
+				<li class="nav-item">
+				   <a class="nav-link btn text-white-50">Build</a>
+				</li>
+				<li class="nav-item wbdv-page-tab">
+				 	<a class="nav-link btn text-white bg-dark">Pages</a>
+				</li>
+				<li class="nav-item">
+				    <a class="nav-link btn text-white-50">Theme</a>
+				</li>
+				<li class="nav-item">
+				    <a class="nav-link btn text-white-50">Store</a>
+				</li>
+				<li class="nav-item">
+				    <a class="nav-link btn text-white-50">Apps</a>
+				</li>
+				<li class="nav-item">
+				    <a class="nav-link btn text-white-50">Settings</a>
+				</li>
+				<li class="nav-item wbdv-new-page-btn">
+					<a class="nav-link btn text-white">
+					   <i class="fa fa-plus fa-lg text-white" aria-hidden="true"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container-fluid full-height">
+		<div class="row full-height">
+			<div class="col-md-2 wbdv-module-list bg-dark pt-3 full-height">
+				<div class="wbdv-module-item">
+				  <label class="wbdv-module-item-title">Module 1 - jQuery</label>
+				  <button type="button" class="wbdv-module-item-delete-btn" aria-label="Close">
+				    <span aria-hidden="true">&times;</span>
+				  </button>
+				</div>
+				<div class="wbdv-module-item bg-primary">
+				  <label class="wbdv-module-item-title">Module 2 - React</label>
+				  <button type="button" class="wbdv-module-item-delete-btn" aria-label="Close">
+				    <span aria-hidden="true">&times;</span>
+				  </button>
+				</div>
+				<div class="wbdv-module-item">
+				  <label class="wbdv-module-item-title">Module 3 - Redux</label>
+				  <button type="button" class="wbdv-module-item-delete-btn" aria-label="Close">
+				    <span aria-hidden="true">&times;</span>
+				  </button>
+				</div>
+				<div class="wbdv-module-item">
+				  <label class="wbdv-module-item-title">Module 4 - Native</label>
+				  <button type="button" class="wbdv-module-item-delete-btn" aria-label="Close">
+				    <span aria-hidden="true">&times;</span>
+				  </button>
+				</div>
+				<div class="wbdv-module-item">
+				  <label class="wbdv-module-item-title">Module 5 - Angular</label>
+				  <button type="button" class="wbdv-module-item-delete-btn" aria-label="Close">
+				    <span aria-hidden="true">&times;</span>
+				  </button>
+				</div>
+				<div class="wbdv-module-item">
+				  <label class="wbdv-module-item-title">Module 5 - Node</label>
+				  <button type="button" class="wbdv-module-item-delete-btn" aria-label="Close">
+				    <span aria-hidden="true">&times;</span>
+				  </button>
+				</div>
+				<div class="wbdv-module-item">
+				  <label class="wbdv-module-item-title">Module 5 - Mongo</label>
+				  <button type="button" class="wbdv-module-item-delete-btn" aria-label="Close">
+				    <span aria-hidden="true">&times;</span>
+				  </button>
+				</div>
+				<div class="wbdv-module-item">
+					<label></label>
+				  <button type="button" class="wbdv-module-item-add-btn" aria-label="Close">
+				    <span aria-hidden="true">+</span>
+				  </button>
+				</div>
+			</div>
+			<div class="col-md-10 pt-3 full-height">
+				<div class="row wbdv-topic-pill-list">
+					<div class="col-md-12">
+						<button class="wbdv-topic-pill px-3">Topic 1</button>
+						<button class="wbdv-topic-pill px-3 bg-dark">Topic 2</button>
+						<button class="wbdv-topic-pill px-3">Topic 3</button>
+						<button class="wbdv-topic-pill px-3">Topic 4</button>
+						<button class="wbdv-topic-add-btn">+</button>
+					</div>
+				</div>
+				<div class="container-fluid m-3">
+					<div class="wbdv-save-preview">
+						<button class="btn btn-success">Save</button>
+						<label class="">Preview
+							<i class="fa fa-toggle-off fa-lg" aria-hidden="true"></i>
+						</label>
+					</div>
+				</div>
+				<div class="container-fluid p-3 border">
+					<div class="wbdv-widget">
+						<div class="wbdv-widget-heading">
+							<div>
+								<label class="wbdv-widget-title">Heading widget</label>
+							</div>
+							<div class="wbdv-widget-change-delete">
+								<button class="btn wbdv-widget-up-btn m-1">
+									<i class="fa fa-arrow-up" aria-hidden="true"></i>
+								</button>
+								<button class="btn wbdv-widget-dn-btn m-1">
+									<i class="fa fa-arrow-down" aria-hidden="true"></i>
+								</button>
+							    <select class="wbdv-widget-select-widget form-control">
+							      <option>Heading</option>
+							    </select>
+							    <button class="btn wbdv-widget-del-btn m-1">
+									<i class="fa fa-times" aria-hidden="true"></i>
+								</button>
+							 </div>
+						</div>
+						<input type="text" class="form-control" placeholder="Heading text">
+						<select class="form-control mt-4">
+					      	<option>Heading 1</option>
+					      	<option>Heading 2</option>
+					      	<option>Heading 3</option>
+					      	<option>Heading 4</option>
+					      	<option>Heading 5</option>
+						</select>
+						<input type="text" class="form-control mt-4" placeholder="Widget name">
+						<label class="mt-2">
+							Preview
+						</label>
+						<label class="mt-2 d-block">
+							<h1>Heading text</h1>
+						</label>
+					</div>
+				</div>
+				<div class="container-fluid m-3">
+					<div class="wbdv-widget-add-widget">
+						<button class="btn wbdv-widget-add-widget-btn">
+							<i class="fa fa-plus-circle" aria-hidden="true"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

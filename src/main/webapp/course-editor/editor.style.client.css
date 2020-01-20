@@ -1,0 +1,112 @@
+html, body {
+  height: 100%;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.wbdv-close {
+	font-size: xx-large;
+    font-weight: 100;
+}
+
+.wbdv-editor-navbar {
+	background-color: #454b4f;
+	justify-content: space-between;
+}
+
+.wbdv-module-item {
+	position: relative;
+    padding: .50rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+	background-color: #454b4f;
+}
+
+.wbdv-module-item-delete-btn {
+	float: right;
+    font-size: 1.5rem;
+    line-height: 1;
+    color: white;
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-appearance: none;
+}
+
+.wbdv-module-item-add-btn {
+	float: right;
+    font-size: 1.5rem;
+    line-height: 1;
+    color: white;
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-appearance: none;
+}
+
+.wbdv-module-item-title {
+	color: white;
+	margin: 0;
+}
+
+.wbdv-topic-pill {
+	background-color: #697073;
+    color: white;
+    margin: 5px;
+}
+
+.wbdv-topic-add-btn {
+	background-color: #697073;
+    color: white;
+    margin: 5px;
+}
+
+.wbdv-save-preview {
+	text-align: end;
+}
+
+.wbdv-widget-heading {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.wbdv-widget-heading {
+	justify-content: space-between;
+}
+
+.wbdv-widget-title {
+	font-size: x-large;
+    font-weight: 400;
+}
+
+.wbdv-widget-up-btn {
+	background-color: #f8c146;
+}
+
+.wbdv-widget-dn-btn {
+	background-color: #f8c146;
+}
+
+.wbdv-widget-select-widget {
+    width: auto;
+    display: inline-block;
+}
+
+.wbdv-widget-del-btn {
+	background-color: red;
+	color: white;
+}
+
+.wbdv-widget-add-widget {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-end;
+}
+
+.wbdv-widget-add-widget-btn {
+	background-color: red;
+	color: white;
+}
